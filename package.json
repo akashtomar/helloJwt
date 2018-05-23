@@ -1,0 +1,28 @@
+{
+  "name": "hellojwt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akashtomar/helloJwt.git"
+  },
+  "keywords": [
+    "JWT",
+    "express"
+  ],
+  "author": "akash tomar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akashtomar/helloJwt/issues"
+  },
+  "homepage": "https://github.com/akashtomar/helloJwt#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
+}
