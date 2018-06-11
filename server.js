@@ -4,6 +4,7 @@ var app = express();
 
 
 app.get('/', (req,res)=>{
+    console.log("git is working i think");
     res.send('HELLO WORLD!11');
 });
 
