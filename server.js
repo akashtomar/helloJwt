@@ -15,6 +15,9 @@ app.use(cors()); //CORS enabled for all origins
 app.use(require('morgan')('dev'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json({ type: 'application/*+json' }));
+require('./models/Users');
+require('./src/config-passport');
+
 app.use('/',router);
 
 
