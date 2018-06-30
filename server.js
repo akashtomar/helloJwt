@@ -15,6 +15,11 @@ app.use(cors()); //CORS enabled for all origins
 app.use(require('morgan')('dev'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json({ type: 'application/*+json' }));
+
+//mongoose config
+mongoose.connect('mongodb://'+process.env.DB_USER+':'+process.env.DB_PASS+process.env.DB_STRING);
+mongoose.set('debug', true);
+
 require('./models/Users');
 require('./src/config-passport');
 
